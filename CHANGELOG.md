@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.0.6
+
+* Nullsafety update 
+* Updated deprecated components 
+
 ## 1.0.5
 
 * Fix issue with `elevation` property that cause crashes
