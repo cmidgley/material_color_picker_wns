@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.7
+
+* Fixed accidental naming issue 
+
 ## 1.0.6
 
 * Nullsafety update 
