@@ -1,5 +1,5 @@
-import 'package:flutter_material_color_picker/src/circle_color.dart';
-import 'package:flutter_material_color_picker/src/colors.dart';
+import 'package:material_color_picker/src/circle_color.dart';
+import 'package:material_color_picker/src/colors.dart';
 import 'package:flutter/material.dart';
 
 class MaterialColorPicker extends StatefulWidget {

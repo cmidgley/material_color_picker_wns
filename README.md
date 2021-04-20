@@ -1,4 +1,4 @@
-# Flutter Material Color Picker [![pub package](https://img.shields.io/pub/v/flutter_material_color_picker.svg)](https://pub.dartlang.org/packages/flutter_material_color_picker)
+# Flutter Material Color Picker [![pub package](https://img.shields.io/pub/v/material_color_picker.svg)](https://pub.dartlang.org/packages/material_color_picker)
 
 Material Color picker is a Flutter widget, that can be customizable.
 
@@ -13,16 +13,16 @@ These examples use a static color for 'selectedColor', but you can use a variabl
 
 ### Add to your Flutter project
 
-You just need to add `flutter_material_color_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/using-packages/).
+You just need to add `material_color_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/using-packages/).
 
 ```yaml
-flutter_material_color_picker: ^1.0.5
+material_color_picker: ^1.0.5
 ```
 
 ### Import
 
 ```dart
-import 'package:flutter_material_color_picker/flutter_material_color_picker.dart';
+import 'package:material_color_picker/material_color_picker.dart';
 ```
 
 ### Basic

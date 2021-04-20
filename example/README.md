@@ -1,4 +1,4 @@
-# flutter_material_color_picker_example
+# material_color_picker_example
 
 A new Flutter project.
 

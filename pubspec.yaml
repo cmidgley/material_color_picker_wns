@@ -1,7 +1,7 @@
-name: flutter_material_color_picker
+name: material_color_picker
 description: Material color picker with some possible customizations for Flutter apps
 version: 1.0.6
-homepage: https://github.com/ajumalp/flutter_material_color_picker
+homepage: https://github.com/ajumalp/material_color_picker
 
 dependencies:
   flutter:
