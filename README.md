@@ -1,4 +1,4 @@
-# Flutter Material Color Picker [![pub package](https://img.shields.io/pub/v/material_color_picker_wns.svg)](https://pub.dartlang.org/packages/material_color_picker_wns)
+# Material Color Picker [![pub package](https://img.shields.io/pub/v/material_color_picker_wns.svg)](https://pub.dartlang.org/packages/material_color_picker_wns)
 
 Material Color picker is a Flutter widget, that can be customizable.
 
@@ -13,16 +13,16 @@ These examples use a static color for 'selectedColor', but you can use a variabl
 
 ### Add to your Flutter project
 
-You just need to add `material_color_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/using-packages/).
+You just need to add `material_color_picker_wns` as a [dependency in your pubspec.yaml file](https://flutter.io/using-packages/).
 
 ```yaml
-material_color_picker: ^1.0.7
+material_color_picker_wns: ^1.0.8
 ```
 
 ### Import
 
 ```dart
-import 'package:material_color_picker/material_color_picker.dart';
+import 'package:material_color_picker_wns/material_color_picker_wns.dart';
 ```
 
 ### Basic
@@ -92,20 +92,20 @@ MaterialColorPicker(
 There is two step, first choose the main color, and when you press it, you have to choose a shade of the main color.
 By default it's all **Material Colors**, but you can define custom colors, a **list of ColorSwatch**.
 
-<img title="Main color selection" src="https://github.com/Pyozer/color_picker/blob/master/demo/main_color.png?raw=true" width="400" />
+<img title="Main color selection" src="https://raw.githubusercontent.com/ajumalp/material_color_picker_wns/master/demo/main_color.png" width="400" />
 
-<img title="Shade color selection" src="https://github.com/Pyozer/color_picker/blob/master/demo/shade_color.png?raw=true" width="400" />
+<img title="Shade color selection" src="https://raw.githubusercontent.com/ajumalp/material_color_picker_wns/master/demo/shade_color.png" width="400" />
 
 ### Example of usages
 
 You can insert the color picker into a **Dialog**
 
-<img title="Example main color in a dialog" src="https://github.com/Pyozer/color_picker/blob/master/demo/main_color_dialog.png?raw=true" width="400" />
+<img title="Example main color in a dialog" src="https://raw.githubusercontent.com/ajumalp/material_color_picker_wns/master/demo/main_color_dialog.png" width="400" />
 
-<img title="Example shade color in a dialog" src="https://github.com/Pyozer/color_picker/blob/master/demo/shade_color_dialog.png?raw=true" width="400" />
+<img title="Example shade color in a dialog" src="https://raw.githubusercontent.com/ajumalp/material_color_picker_wns/master/demo/shade_color_dialog.png" width="400" />
 
 ### Display color
 
 You can use CircleColor widget, to display the selected color into your settings for example.
 
-<img title="Example of circlecolor widget in ListTile" src="https://github.com/Pyozer/color_picker/blob/master/demo/example_circle_color.png?raw=true" width="400" />
+<img title="Example of circlecolor widget in ListTile" src="https://raw.githubusercontent.com/ajumalp/material_color_picker_wns/master/demo/example_circle_color.png" width="400" />

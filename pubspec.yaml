@@ -1,7 +1,8 @@
 name: material_color_picker_wns
 description: Material color picker with some possible customizations for Flutter apps
-version: 1.0.7
-homepage: https://github.com/ajumalp/material_color_picker_wns
+version: 1.0.8
+homepage: https://erratums.com
+repository: https://github.com/ajumalp/material_color_picker_wns
 
 dependencies:
   flutter:
@@ -9,3 +10,4 @@ dependencies:
 
 environment:
   sdk: '>=2.12.0-0 <3.0.0'
+  flutter: '>=2.0.4'
