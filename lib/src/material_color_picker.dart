@@ -78,12 +78,9 @@ class _MaterialColorPickerState extends State<MaterialColorPicker> {
   }
 
   ColorSwatch? _findMainColor(Color shadeColor) {
-    for (final mainColor in _colors)
-      if (_isShadeOfMain(mainColor, shadeColor)) return mainColor;
+    for (final mainColor in _colors) if (_isShadeOfMain(mainColor, shadeColor)) return mainColor;
 
-    return (shadeColor is ColorSwatch && _colors.contains(shadeColor))
-        ? shadeColor
-        : null;
+    return (shadeColor is ColorSwatch && _colors.contains(shadeColor)) ? shadeColor : null;
   }
 
   bool _isShadeOfMain(ColorSwatch mainColor, Color shadeColor) {
@@ -95,8 +92,7 @@ class _MaterialColorPickerState extends State<MaterialColorPicker> {
 
   void _onMainColorSelected(ColorSwatch color) {
     var isShadeOfMain = _isShadeOfMain(color, _shadeColor);
-    final Color? shadeColor =
-        isShadeOfMain ? _shadeColor : (color[500] ?? color[400]);
+    final Color? shadeColor = isShadeOfMain ? _shadeColor : (color[500] ?? color[400]);
 
     // shadeColor should not be null { Ajmal }
     if (shadeColor == null) return;
@@ -110,8 +106,11 @@ class _MaterialColorPickerState extends State<MaterialColorPicker> {
     if (widget.onlyShadeSelection && !_isMainSelection) {
       return;
     }
-    if (widget.allowShades && widget.onColorChange != null)
-      widget.onColorChange!(shadeColor);
+
+    if (widget.onColorChange != null) {
+      // if not doing shades, or if there is only one shade, event that the final color was changed
+      if (!widget.allowShades || _getMaterialColorShades(color).length <= 1) widget.onColorChange!(shadeColor);
+    }
   }
 
   void _onShadeColorSelected(Color color) {
@@ -174,7 +173,9 @@ class _MaterialColorPickerState extends State<MaterialColorPicker> {
 
   @override
   Widget build(BuildContext context) {
-    final listChildren = _isMainSelection || !widget.allowShades
+    // build list of children - using main colors, or shades as long as they are wanted and there are at least 2 shades
+    // to show
+    final listChildren = (_isMainSelection || !widget.allowShades || _getMaterialColorShades(_mainColor).length <= 1)
         ? _buildListMainColor(_colors)
         : _buildListShadesColor(_mainColor);
 
